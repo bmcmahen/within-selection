@@ -9,9 +9,12 @@
 
     $ component install bmcmahen/within-selection
 
-## API
+## Use
 
-
+```javascript
+var within = require('within-selection');
+within('span'); // get all spans within the selection
+```
 
 ## License
 
