@@ -1,0 +1,17 @@
+{
+  "name": "within-selection",
+  "repo": "bmcmahen/within-selection",
+  "description": "get elements contained within a selection",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/matches-selector": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "remotes": []
+}
