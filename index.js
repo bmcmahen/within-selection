@@ -5,13 +5,21 @@ function isMatch(node, selector){
 }
 
 module.exports = function(selector){
+  var range, selection, ancestor, all;
+  var nodes = [];
+
+
   // Good browsers
   if (window.getSelection) {
     
-    var selection = window.getSelection();
-    var range = selection.getRangeAt(0);
-    var all = range.commonAncestorContainer.getElementsByTagName('*');
-    var nodes = [];
+    selection = window.getSelection();
+    range = selection.getRangeAt(0);
+    nodes = [];
+
+    ancestor = range.commonAncestorContainer;
+    if (ancestor.nodeType === 3) return nodes;
+
+    all = ancestor.getElementsByTagName('*');
 
     for (var i = 0, len = all.length; i < len; i++) {
       var el = all[i];
@@ -31,5 +39,7 @@ module.exports = function(selector){
   // Older IE
   } else if (document.selection){
     // Give prayers.
+    // Eventually do something like this:
+    // http://stackoverflow.com/a/5801903/1198166
   }
 }
