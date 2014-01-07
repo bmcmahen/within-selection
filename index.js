@@ -1,5 +1,7 @@
 var matches = require('matches-selector');
 
+var NODETYPE_TEXT_NODE = 3;
+
 function isMatch(node, selector){
   return node.nodeType !== 3 && matches(node, selector);
 }
@@ -17,7 +19,9 @@ module.exports = function(selector){
     nodes = [];
 
     ancestor = range.commonAncestorContainer;
-    if (ancestor.nodeType === 3) return nodes;
+    if (ancestor.nodeType === NODETYPE_TEXT_NODE) {
+      return nodes;
+    }
 
     all = ancestor.getElementsByTagName('*');
 
@@ -42,4 +46,4 @@ module.exports = function(selector){
     // Eventually do something like this:
     // http://stackoverflow.com/a/5801903/1198166
   }
-}
+};
