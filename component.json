@@ -2,7 +2,7 @@
   "name": "within-selection",
   "repo": "bmcmahen/within-selection",
   "description": "get elements contained within a selection",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "keywords": [],
   "dependencies": {
     "component/matches-selector": "0.1.5"

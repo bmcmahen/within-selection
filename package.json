@@ -1,0 +1,29 @@
+{
+  "name": "within-selection",
+  "version": "1.0.0",
+  "description": "get elements within a selection",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bmcmahen/within-selection.git"
+  },
+  "keywords": [
+    "selection",
+    "selection-range"
+  ],
+  "author": "Ben McMahen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bmcmahen/within-selection/issues"
+  },
+  "homepage": "https://github.com/bmcmahen/within-selection",
+  "dependencies": {
+    "component-matches-selector": "^0.1.5"
+  }
+}

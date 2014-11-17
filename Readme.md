@@ -5,9 +5,10 @@
 
 ## Installation
 
-  Install with [component(1)](http://component.io):
+  Install with [component(1)](http://component.io) or NPM:
 
     $ component install bmcmahen/within-selection
+    $ npm install within-selection
 
 ## Use
 

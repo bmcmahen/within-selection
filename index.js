@@ -2,7 +2,13 @@
  * Module dependencies
  */
 
-var matches = require('matches-selector');
+var matches;
+
+try {
+  matches = require('component-matches-selector');
+} catch (e) {
+  matches = require('matches-selector');
+}
 
 var TEXT_NODE_TYPE = 3;
 
